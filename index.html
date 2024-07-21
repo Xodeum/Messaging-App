@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send SMS</h1>
+        <form id="smsForm">
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="+1234567890" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            
+            <button type="submit">Send SMS</button>
+        </form>
+        <p id="response"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
